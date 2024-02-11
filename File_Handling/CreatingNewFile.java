@@ -4,7 +4,7 @@ import java.io.*;
 
 public class CreatingNewFile {
     public static void main(String[] args) {
-        File obj = new File("C:\\Users\\Vaibhav Mishra\\Desktop\\Java Backend\\File_Handling\\Bega.txt");
+        File obj = new File("Bega2.txt");
         try {
             if(obj.createNewFile()){
                 System.out.println("File created successfully..");
