@@ -10,7 +10,7 @@ class ReadFromFile {
     public static void main(String[] args) {  
         try {  
             // Create f1 object of the file to read data  
-            File f1 = new File("C:\\Users\\Vaibhav Mishra\\Desktop\\Java Backend\\File_Handling\\Bega1.txt");    
+            File f1 = new File("C:\\Users\\Vaibhav Mishra\\Desktop\\Java Backend\\File_Handling\\Bega2.txt");    
             Scanner dataReader = new Scanner(f1);   // System.in means we r taking input from sytem(keyboard)
             while (dataReader.hasNextLine()) {  
                 String fileData = dataReader.nextLine();  
