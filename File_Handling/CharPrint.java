@@ -16,9 +16,12 @@ public class CharPrint {
 ///////////////////////////////////////////////////////////////////////////
 // Integer.parseInt() method to convert a string to an integer
         String s = "Vaibhav is";
-        try{ int Value = Integer.parseInt(s);
-            System.out.println((char)Value);}
+        try{ 
+            int Value = Integer.parseInt(s);
+            System.out.println((char)Value);
+        }
             catch(NumberFormatException e){
+                e.printStackTrace();
                 System.out.println("Error aya h bhai");
             }
     }
