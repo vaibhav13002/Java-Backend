@@ -9,7 +9,7 @@ public class GenericClass {
         System.out.println(box.container.getClass().getName());
     }
 }
-// T means ki This is of T datatype jo bhi datatype object bana ke bhejengey o accept krlega a 
+// T means ki This is of T datatype jo bhi datatype object bana ke bhejengey o accept krlega a. 
 class Box<T> {
     T container;
 
