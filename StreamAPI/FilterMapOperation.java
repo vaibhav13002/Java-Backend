@@ -15,5 +15,21 @@ public class FilterMapOperation {
        List<Integer> num = List.of(2,5,7,9,44);
        List<Integer> NewNum = num.stream().map(i->i*i).collect(Collectors.toList());
        System.out.println(NewNum);
+
+       num.stream().sorted().forEach(System.out::println);
+    // Sorting and printing with a space between each element
+       num.stream().sorted().forEach(i -> System.out.print(i + " "));
+System.out.println();
+       //Minimum
+      Integer integer =num.stream().min((x,y) -> x.compareTo(y)).get();
+      System.out.println(integer);
+      //Maximum
+      Integer integer1 =num.stream().max((x,y) -> x.compareTo(y)).get();
+      System.out.println(integer1);
+
+
+      int sum = num.stream().reduce(0, (acc, num1) -> acc + num1); // Stream is consumed and cannot be used again
+      System.out.println(sum);
+      System.out.println(num);
     }
 }
